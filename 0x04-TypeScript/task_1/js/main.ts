@@ -26,5 +26,19 @@ location: 'London',
 numberOfReports: 17,
 };
 
+interface printTeacherFunction {
+(firstName: string, lastName: string): string;
+}
+
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+const firstLetter = firstName.charAt(O).toUpperCase();
+const fullName = `${firstLetter}. ${lastName}`;
+return fullName;
+};
+
+console.log(printTeacher("Joshua", "Doe"));
+
 console.log(teacher3);
 console.log(director1);
+
+
